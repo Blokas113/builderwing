@@ -6,39 +6,73 @@
     <title>BuilderWing - Find Trusted Tradespeople</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f2f2f2;
+            background-color: #EAEAEA;
+            color: #333;
         }
         .header {
             background-color: #2C3E50;
             color: white;
             padding: 20px;
             text-align: center;
-            font-size: 24px;
+            font-size: 28px;
+            font-weight: bold;
+            text-transform: uppercase;
         }
         .container {
-            max-width: 1000px;
-            margin: 20px auto;
+            max-width: 1100px;
+            margin: 40px auto;
             background: white;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15);
         }
         .section {
-            margin-bottom: 20px;
+            margin-bottom: 30px;
+            border-bottom: 2px solid #DDD;
+            padding-bottom: 20px;
+        }
+        h2 {
+            font-size: 24px;
+            color: #2C3E50;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+        p {
+            font-size: 16px;
+            line-height: 1.6;
         }
         .btn {
             display: inline-block;
             background: #FFD700;
             color: black;
-            padding: 10px 20px;
+            padding: 12px 25px;
             text-decoration: none;
-            border-radius: 5px;
+            border-radius: 8px;
+            font-weight: bold;
+            font-size: 16px;
+            box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.1);
         }
         .btn:hover {
             background: #f2c200;
+        }
+        .features {
+            display: flex;
+            gap: 20px;
+        }
+        .feature-card {
+            flex: 1;
+            background: #FFF;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .feature-card img {
+            width: 80px;
+            height: 80px;
         }
     </style>
 </head>
@@ -57,11 +91,20 @@
         </div>
         <div class="section">
             <h2>Why Choose BuilderWing?</h2>
-            <ul>
-                <li>Verified and Trusted Tradespeople</li>
-                <li>Competitive Quotes</li>
-                <li>Customer Reviews</li>
-            </ul>
+            <div class="features">
+                <div class="feature-card">
+                    <img src="https://cdn-icons-png.flaticon.com/512/3076/3076404.png" alt="Trusted Tradespeople">
+                    <p><strong>Verified and Trusted</strong></p>
+                </div>
+                <div class="feature-card">
+                    <img src="https://cdn-icons-png.flaticon.com/512/2331/2331970.png" alt="Competitive Quotes">
+                    <p><strong>Competitive Quotes</strong></p>
+                </div>
+                <div class="feature-card">
+                    <img src="https://cdn-icons-png.flaticon.com/512/747/747376.png" alt="Customer Reviews">
+                    <p><strong>Customer Reviews</strong></p>
+                </div>
+            </div>
         </div>
     </div>
 </body>
